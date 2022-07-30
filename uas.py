@@ -61,11 +61,11 @@ with middle_column:
 st.markdown("""---""")
 
 # BAP TILANG BY WILAYAH [BAR CHART]
-tilang_wilayah = (df_selection.groupby(by=["Wilayah"]).sum()[["BAP_Tilang"]])
+tilang_wilayah = (df_selection.groupby(by=["Wilayah"]).sum()[["BAP_tilang"]])
 fig_tilang = px.bar(
     tilang_wilayah,
     x=tilang_wilayah.index,
-    y="BAP_Tilang",
+    y="BAP_tilang",
     title="<b>BAP Tilang by Wilayah</b>",
     color_discrete_sequence=["#0083B8"] * len(tilang_wilayah),
     template="plotly_white",
