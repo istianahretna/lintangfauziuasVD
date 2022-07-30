@@ -48,7 +48,7 @@ st.title(":bar_chart: Dashboard Data")
 st.markdown("##")
 
 # TOP KPI's
-bap_tilang = int(df_selection["BAP_Tilang"].sum())
+bap_tilang = int(df_selection["BAP_tilang"].sum())
 derek = int(df_selection["Penderekan"].sum())
 left_column, middle_column, right_column = st.columns(3)
 with left_column:
